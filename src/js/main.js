@@ -26,7 +26,7 @@ const welcome = (name, age) => {
     console.log(`Witaj ${name}, masz ${age} lat.`);
 }
 
-// welcome('Janek', 20);
+// XDD welcome('Janek', 20);
 
 const myAge = 20;
 const myName = 'Janek';
