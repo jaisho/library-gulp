@@ -16,7 +16,21 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+console.log('Witaj przybyszu!!!');
 
-console.log(`Hello world!`);
+const about = document.querySelector('.main__wrapper--js');
+console.log(about);
+about.innerHTML = 'Witam na mojej stronie :D';
+
+const welcome = (name, age) => {
+    console.log(`Witaj ${name}, masz ${age} lat.`);
+}
+
+// welcome('Janek', 20);
+
+const myAge = 20;
+const myName = 'Janek';
+
+welcome(myName, myAge);
 
 
