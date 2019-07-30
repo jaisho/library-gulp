@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+
+    <!-- Title -->
+    <meta property="og:title" content="" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navigation">
+        <a href="index.html" class="navigation__link">Strona Główna</a>
+        <a href="catalog.html" class="navigation__link">Katalog treści</a>
+    </header>
+    <main class="main">
+        <header class="main-header">
+            <h1 class="main-header__title">
+                Katalog dostępnych treści.
+            </h1>
+        </header>
+        <section class="main-section">
+            <h2 class="main-description__title">
+                Treść podzielona jest na następujące kategorie:
+            </h2>
+            <p class="main-section__paragraph">
+                <div class="main-section__list">
+                    <div class="main-section__list-item"><a href="placesInInternet.html"
+                            class="main-section__link">Miejsca w internecie, które warto śledzić.</a></div>
+                    <div class="main-section__list-item"><a href="reading.html" class="main-section__link">Coś do
+                            poczytania, czyli książki i artykuły.</a></div>
+                    <div class="main-section__list-item"><a href="forBeginners.html" class="main-section__link">Treści
+                            przydatne dla początkujących.</a></div>
+                    <div class="main-section__list-item"><a href="frontendTools.html"
+                            class="main-section__link">Narzędzia przydatne przy tworzeniu Frontendu.</a></div>
+                    <div class="main-section__list-item"><a href="learningTools.html"
+                            class="main-section__link">Narzędzia przydatne do nauki Frontendu.</a></div>
+                    <div class="main-section__list-item"><a href="courses.html" class="main-section__link">Kursy warte
+                            uwagi.</a></div>
+                    <div class="main-section__list-item"><a href="design.html" class="main-section__link">Treści
+                            związane z szeroko pojętym "designem" i stroną wizualną.</a></div>
+                    <div class="main-section__list-item"><a href="computerScience.html"
+                            class="main-section__link">Treści związane z szeroko pojętym "computer science".</a></div>
+                    <div class="main-section__list-item"><a href="inspirations.html" class="main-section__link">Pomysły
+                            na projekt oraz inne inspiracje.</a></div>
+                </div>
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        Moja strona z zebranymi materiałami do nauki Frontendu, wszystkie treści są efektem szkolenia WTF: Co ten
+        Frontend?
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
