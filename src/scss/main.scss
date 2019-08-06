@@ -14,52 +14,53 @@ html {
 /*ZMIENIĆ KLASYCZNY CSS NA SASS XDDD*/
 
 body {
-  margin: 0;
-  padding: 16px;
-  font-family: "Montserrat", sans-serif;
   background: #9999a1;
   color: #e6e6e9;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px;
   padding-bottom: 100px;
-  /*ZMIENIĆ KLASY BEMOWE, ŻEBY NIE BYŁO TYLE MAIN ITP. */
 }
 
-.main-site {
-  width: 100%;
+.main-siteWrapper {
   max-width: 900px;
-  /*POSORTOWAĆ ALFABETYCZNIE*/
   margin: 10px auto;
   padding: 30px 0 0 0;
+  width: 100%;
 }
 
 .main {
-  width: 100%;
   max-width: 800px;
   margin: 20px auto;
   padding: 30px 0 0 0;
-}
-
-.main-header__title {
-  font-size: 2.5rem;
-  padding: 30px 0 0 0;
-}
-
-.main-header__title--subtitle {
-  font-size: 1.25rem;
-}
-
-.main__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 60vh;
-}
-
-.main__image {
   width: 100%;
-  max-width: 500px;
-  display: block;
-  padding: 15px 0 0 0;
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+
+  &__image {
+    display: block;
+    max-width: 500px;
+    padding: 15px 0 0 0;
+    width: 100%;
+    }  
+  }
+}
+
+.header {
+
+  &__title {
+    font-size: 2.5rem;
+    padding: 30px 0 0 0;
+
+    &--subtitle {
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .navigation {
@@ -175,13 +176,13 @@ body {
     font-size: 0.6rem;
   }
 
-  .main-header__title {
+  .header__title {
     padding: 32px 0 0 0;
     margin-bottom: 0;
     font-size: 1.5rem;
   }
 
-  .main-header__title--subtitle {
+  .header__title--subtitle {
     font-size: 0.8rem;
   }
 
