@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-/*ZMIENIĆ KLASYCZNY CSS NA SASS XDDD*/
+/*DOPRACOWAĆ SASS, PRZEDEWSZYSTKIM MEDIA QUERRIES*/
 
 body {
   background: #9999a1;
@@ -149,20 +149,20 @@ body {
     }
 }
 
-.main-link-wrapper {
+.backlink-wrapper {
   background: #66666e;
-  position: fixed;
   bottom: 60px;
-  right: 20px;
-  padding: 8px;
   margin: 8px;
-}
+  padding: 8px;
+  position: fixed;
+  right: 20px;
 
-.main-link-wrapper__link {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 0.8rem;
+    &__link {
+      color: white;
+      font-weight: bold;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
 }
 
 @media (max-width: 640px) {
@@ -176,7 +176,7 @@ body {
     font-size: 0.85rem;
   }
 
-  .main-link-wrapper__link {
+  .backlink-wrapper__link {
     font-size: 0.6rem;
   }
 
